@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <h1>Local layout: {{page.title}}</h1>
+    <p>This fails too as the tag is considered unknown</p>
+    <p>{% render_time page rendered at: %}</p>
+    {{content}}
+  </body>
+</html>
+
